@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer, Stopwatch, and Countdown</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .timer, .stopwatch, .countdown {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        .display {
+            font-size: 36px;
+            margin: 10px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1da23c;
+            color: #fffafa;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Timer, Stopwatch, and Countdown</h1>
+    <div class="container">
+        <div class="timer">
+            <h2>Timer</h2>
+            <div class="display" id="timer-display">00:00:00</div>
+            <button id="start-button" onclick="startTimer()">Start</button>
+            <button id="stop-button" onclick="stopTimer()">Stop</button>
+            <button id="reset-button" onclick="resetTimer()">Reset</button>
+        </div>
+        <div class="stopwatch">
+            <h2>Stopwatch</h2>
+            <div class="display" id="stopwatch-display">00:00:00</div>
+            <button id="start-stopwatch-button" onclick="startStopwatch()">Start</button>
+            <button id="stop-stopwatch-button" onclick="stopStopwatch()">Stop</button>
+            <button id="reset-stopwatch-button" onclick="resetStopwatch()">Reset</button>
+        </div>
+        <div class="countdown">
+            <h2>Countdown</h2>
+            <div class="display" id="countdown-display">00:00:00</div>
+            <input type="text" id="countdown-input" placeholder="Enter time in seconds">
+            <button id="start-countdown-button" onclick="startCountdown()">Start Countdown</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for timer, stopwatch, and countdown goes here.
+    </script>
+</body>
+</html>
+
+
